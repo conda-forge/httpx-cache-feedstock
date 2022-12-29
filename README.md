@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpx-cache-fee
 
 Summary: Simple caching transport for httpx.
 
+Documentation: https://obendidi.github.io/httpx-cache
+
 Current build status
 ====================
 
@@ -144,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@ludaavics](https://github.com/ludaavics/)
+* [@obendidi](https://github.com/obendidi/)
 
