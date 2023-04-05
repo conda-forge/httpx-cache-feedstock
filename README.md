@@ -1,11 +1,11 @@
-About httpx-cache
-=================
+About httpx-cache-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpx-cache-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/obendidi/httpx-cache
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpx-cache-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simple caching transport for httpx.
 
