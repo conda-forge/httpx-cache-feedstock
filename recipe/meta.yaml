@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: httpx-cache
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/h/httpx-cache/httpx_cache-{{ version }}.tar.gz
-  sha256: d65df5633e9b295beeee41ca338d6394bb7f9ea4a83497a788984c88c367d76e
+  sha256: 6eb8a876e343ff9e39ac2684a588d957372eefebab970647c6bcd62c9bdcbae9
 
 build:
   noarch: python
