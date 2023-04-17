@@ -11,7 +11,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
   run:
     - aiorwlock >=1.2.0,<2.0.0
     - anyio >=3.4.0,<4.0.0
-    - attrs >=21.4.0,<22.0.0
+    - attrs >=21.4.0,<23.0.0
     - fasteners >=0.16.3,<0.18.0
     - httpx >=0.23.0,<0.24.0
     - msgpack-python >=1.0.3,<2.0.0
