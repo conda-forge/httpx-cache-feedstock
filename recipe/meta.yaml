@@ -5,19 +5,19 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/h/httpx-cache/httpx_cache-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/h/httpx-cache/httpx_cache-{{ version }}.tar.gz
   sha256: 12a2798f968100f985b5d05600609fb96fc7053ec46063555f041e9a1c5f8306
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - hatchling
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - aiorwlock >=1.2.0,<2.0.0
     - anyio >=3.4.0,<4.0.0
@@ -25,7 +25,7 @@ requirements:
     - fasteners >=0.16.3,<0.18.0
     - httpx >=0.23.0,<1.0
     - msgpack-python >=1.0.3,<2.0.0
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/obendidi/httpx-cache
